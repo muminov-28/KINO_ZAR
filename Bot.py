@@ -5,8 +5,8 @@ from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Application, CommandHandler, MessageHandler, CallbackQueryHandler, filters, ContextTypes
 
 # 🔐 Token va Admin ID
-API_TOKEN = '7876159184:AAG52HCggAT0P77eSKN6B-28UQhFNsxcVjU'
-ADMIN_ID = 5160827060
+API_TOKEN = os.getenv("API_TOKEN")
+ADMIN_ID = int(os.getenv("ADMIN_ID"))
 
 # 📢 Obuna kerak bo‘lgan kanallar
 REQUIRED_CHANNELS = ['@xjxjcjcjzkzic', '@ggivxjdijdd', '@ddkgxtycfhvhgc']
